@@ -1,10 +1,3 @@
-user_behavior_data_warehouse/
-├── data/                  # 存放原始行为日志（已生成）
-│   └── user_behavior_logs.csv
-├── etl/
-│   ├── load_ods.py        # 加载并清洗原始数据
-│   ├── transform_dwd.py   # 标准化字段（行为枚举化）
-│   ├── aggregate_dws.py   # 聚合成用户行为宽表
-│   └── metrics_ads.py     # 计算 DAU、留存率、转化率
-├── output/                # 最终指标报表输出
-└── README.md              # 项目说明文档
+1.data_generation:生成App用户行为数据并保存值user_behaviors_realistic.csv表格中；
+2.user_behaviors_ETL：ODS/DWS/DWD/ADS建模数据表；
+3.connectsql_visalize.py:利用python做可视化漏斗；
